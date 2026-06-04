@@ -13,11 +13,12 @@
     <script>
       stlite.mount(
         {
-          requirements: ["pandas"], // Add any other pip packages you need here
+          requirements: ["pandas", "plotly"], 
+          
           entrypoint: "app.py",
           files: {
             "app.py": {
-              url: "app.py", // Fetches your app.py file directly from the repo
+              url: "app.py",
             },
           },
         },
